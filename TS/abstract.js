@@ -23,3 +23,4 @@ class Dog extends Animal {
 const dog = new Dog();
 dog.makeSound();
 dog.move();
+// 인터페이스는 모든 메소드가 추상 메서드이다.
