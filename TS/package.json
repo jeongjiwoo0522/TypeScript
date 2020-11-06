@@ -1,5 +1,5 @@
 {
-  "name": "TS",
+  "name": "typescript",
   "version": "1.0.0",
   "description": "",
   "main": "HelloWord.js",
@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "@types/lodash": "^4.14.162",
-    "lodash": "^4.17.20"
+    "lodash": "^4.17.20",
+    "nodemon": "^2.0.6"
   }
 }

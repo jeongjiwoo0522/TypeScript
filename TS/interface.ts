@@ -50,7 +50,7 @@ console.log(squareFunc(10));
 
 class ClassTodo implements Todo {
   constructor(
-    public id: number,
+    public id: number,  
     public content: string,
     public completed: boolean
   ) {}
