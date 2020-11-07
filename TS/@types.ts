@@ -9,3 +9,20 @@ class Startup {
 };
 
 Startup.main();
+
+interface context {
+  name: string;
+}
+
+class name implements context {
+  constructor(
+    public name: string
+  ) {
+    this.x = null;
+  }
+  public x: string | number | null;
+}
+
+const newName: context = {
+  name: "ksfd",
+};
