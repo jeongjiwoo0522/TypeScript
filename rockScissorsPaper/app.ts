@@ -7,6 +7,7 @@ import session from "express-session";
 import { Request, Response, NextFunction } from "express";
 import { calcPercent } from "./rockScissorsPaper";
 import indexRouter from "./routes";
+import userRouter from "./routes/user";
 
 const app: express.Application = express();
 
@@ -26,6 +27,7 @@ app.use((req: Request, res: Response, next: NextFunction) => {
 });
 
 app.use("/", indexRouter);
+app.use("/user", userRouter);
 
 app.use((req: Request, res: Response, next: NextFunction) => {
   res.status(404).json({
